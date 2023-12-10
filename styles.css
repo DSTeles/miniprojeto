@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+
+body {
+    font-family: 'Neuton', serif;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+/* header */
+.header {
+    padding: 30px 0 20px 0;
+    text-align: center;
+    background: #FFCF91;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.header a{      
+    color:black;
+    text-align: center;
+    padding: 12px;
+    font-size: 23px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-shadow: 1px 1px 0px #F2B80E;
+    color: #8E180F;
+}
+  
+.header a.active {
+    text-shadow: 1px 1px 0px #F2B80E;
+    color: #8E180F;
+    font-weight: bold;
+}
+.content {
+    padding:20px;
+    font-family: 'Neuton', serif;
+}
+
+.logo{
+    font-family: 'Kalam', cursive;
+    text-shadow: 1px 1px 0px #F2B80E;
+}
+/* header */
+
+
+
+/* fundo index */
+.pizzabg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+/* fundo index */
+
+
+
+/* texto index */
+.inforestaurante{
+    position: relative;
+    text-align: center;
+}
+
+.info{
+    width: fit-content;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    padding: 20px 50px 40px 90px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50%;
+}
+/* texto index */
+
+
+
+
+
+/* texto e titulos */
+.title{
+    font-size: 2em;
+    color: #8E180F;
+}
+
+.text{
+    font-size: 1em;
+    letter-spacing: 0.3px;
+}
+/* texto e titulos */
+
+
+
+/* contactos */
+label{
+    color: #AF1E13;
+    font-weight: bold;
+    
+}
+  
+input[type=submit]{
+    background-color: #F2B80E;
+    border: none;
+    color: #8E180F;
+    padding: 15px 30px;
+    margin: 5px 2px;
+    text-decoration: none;
+}
+  
+.msg{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+.box{
+    padding: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #F5FCEB;
+}
+.box > div{
+    margin: 50px;
+}
+
+.googlemaps{
+    position: relative;
+    padding-bottom: 100%; 
+    height: 0;
+    width: 400px;
+    overflow: hidden;
+}
+
+.googlemaps iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* contactos */
+
+
+
+/* lista pizzas */
+.images{
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+}
+
+.menulist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.pizza{
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    height: 30%;
+    padding: 0 25px 0;
+    width: 30%;
+}
+
+
+.price{
+    color: #AF1E13;
+    font-weight: bold; 
+}
+
+.price:hover{
+    text-shadow: 1px 1px 0px #F2B80E;
+    color: #8E180F;
+    font-weight: bold;
+}
+
+.title:hover{
+    text-shadow: 1px 1px 0px #F2B80E;
+    color: #8E180F;
+    font-weight: bold;
+}
+/* lista pizzas */
+
+
+
+/* about us */
+.aboutus{
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.aboutustext{
+    padding: 30px;
+}
+
+.aboutus > img{
+    object-fit: contain;
+}
+/* about us */
+
+
+
+/* footer */
+.footer {
+    padding: 30px 0 20px 0;
+    text-align: center;
+    background: #B1BCA0;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.footer a{      
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    transition: 0.2s;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+    text-shadow: 1px 1px 0px #F2B80E;
+    color: #8E180F;
+}
+
+.content {
+    padding:20px;
+}
+
+.logoimg{
+    height: 5px;
+}
+
+/* icon */
+.content > a > img{
+    height: 30px;
+}
+/* icon */
+/* footer */
+
+
+
+/* telemovel */
+@media (max-width: 540px) {
+    /* texto e titulos */
+    .title{
+        font-size: 1em;
+        color: #8E180F;
+    }
+    
+    .text{
+        font-size: 16px;
+        letter-spacing: 0.1px;
+    }
+    /* texto e titulos */
+    
+    /* about us */
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aboutustext{
+        padding: 30px;
+    }
+    
+    .aboutus > img{
+        object-fit: contain;
+    }
+    /* about us */
+
+    /* contactos */
+    .box{
+        flex-direction: column;
+    }
+    
+    /* contactos */
+}
+
+@media (max-width: 768px) {
+    /* about us */
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .aboutustext{
+        padding: 30px;
+    }
+        
+     .aboutus > img{
+        object-fit: contain;
+    }
+    /* about us */
+
+
+     /* contactos */
+    .googlemaps{
+        width: 100%;
+    }
+    /* contactos */  
+
+    .menulist{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* about us */
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .aboutustext{
+        padding: 30px;
+    }
+        
+     .aboutus > img{
+        object-fit: contain;
+    }
+    /* about us */
+}
